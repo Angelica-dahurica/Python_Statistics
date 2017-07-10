@@ -22,7 +22,7 @@ class Solution():
 
 		average_d = np.mean(list_d)
 		sum = 0.0;
-		for(int k = 0; k < n; k++):
+		for k in n:
 			sum += list_d[k];
 		var_d = np.sqrt(sum / (n - 1))
 
