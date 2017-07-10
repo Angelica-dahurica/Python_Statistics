@@ -21,7 +21,10 @@ class Solution():
 			list_d.append((float(list_old[i]) - float(list_new[i])))
 
 		average_d = np.mean(list_d)
-		var_d = np.std(list_d)
+		sum = 0.0;
+		for(int k = 0; k < n; k++):
+			sum += list_d[k];
+		var_d = np.sqrt(sum / (n - 1))
 
 		alpha = 0.05
 		result = t.ppf(1 - alpha, n - 1)
